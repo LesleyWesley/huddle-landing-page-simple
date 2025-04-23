@@ -98,6 +98,9 @@ ul {
   list-style: none;
   padding: 0;
   gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
@@ -111,6 +114,13 @@ li a {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /*Active States*/
@@ -134,6 +144,7 @@ li a:active {
   body {
     height: 100vh;
     background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
     align-items: flex-start;
     padding: 3.5rem;
   }
@@ -149,24 +160,52 @@ li a:active {
   main {
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .main--image-container {
-    width: 55%;
-  }
-  .main--text-container {
-    width: 40%;
+    gap: 2rem;
   }
 
   .main--image-container {
     margin: 0;
+    width: 55%;
+  }
+
+  .main--text-container {
+    width: 40%;
+    align-items: flex-start;
   }
 
   .logo {
     width: 15%;
   }
 
+  h1 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  p {
+    font-size: 1.15rem;
+    margin-top: 1.75rem;
+    text-align: left;
+  }
+
+  .register-link {
+    font-size: 1.15rem;
+    width: 40%;
+  }
+
   ul {
     margin: 0;
+  }
+
+  li {
+    height: 3rem;
+  }
+
+  li a i {
+    font-size: 1.25rem;
+  }
+
+  footer {
+    justify-content: flex-end;
   }
 }
